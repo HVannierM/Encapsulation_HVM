@@ -18,14 +18,9 @@ int main(int argc, const char* argv[]) {
 	Player player(0.f, 0.f, 50.f, 0.f, 0.f,1.f);
 	Mob mob(2.f, 2.f, 50.f, 5.f, 0.f,1.f);
 
+	player.Atk(so, 10);
 	player.Lost_HP(10);
 	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
-
 
 	return 0;
 	/*

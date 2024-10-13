@@ -12,7 +12,7 @@ void Entity::Set_PosX(float _x) {
 }
 
 void Entity::Set_PosY(float _y) {
-	position.Set_PositionX(_y);
+	position.Set_PositionY(_y);
 }
 
 float Entity::Get_PosX() {
