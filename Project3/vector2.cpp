@@ -6,10 +6,10 @@
 Vector2::Vector2():x(0.f), y(0.f) {}
 
 void Vector2::Set_PositionX(float _x) {
-	Vector2::x = _x;
+	x = _x;
 }
 void Vector2::Set_PositionY(float _y) {
-	Vector2::y = _y;
+	y = _y;
 }
 
 float Vector2::Get_PosX() {

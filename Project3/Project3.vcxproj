@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\AppData\Local\Temp\Rar$DRa45016.2140\EncapsulationTheorique1-master\EncapsulationTheorique1\Player.cpp" />
     <ClCompile Include="Alive.cpp" />
     <ClCompile Include="AMovable.cpp" />
     <ClCompile Include="BreakableObject.cpp" />
@@ -135,12 +134,12 @@
     <ClCompile Include="Integer.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mob.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="StaticObject.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\AppData\Local\Temp\Rar$DRa45016.2140\EncapsulationTheorique1-master\EncapsulationTheorique1\Player.h" />
     <ClInclude Include="Alive.h" />
     <ClInclude Include="AMovable.h" />
     <ClInclude Include="BreakableObject.h" />
@@ -149,6 +148,7 @@
     <ClInclude Include="IAttacker.h" />
     <ClInclude Include="Integer.h" />
     <ClInclude Include="Mob.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="StaticObject.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="vector2.h" />

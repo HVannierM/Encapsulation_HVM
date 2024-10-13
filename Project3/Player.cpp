@@ -3,48 +3,48 @@
 
 Player::Player(float _x, float _y, float _hp, float _directionX, float _directionY, float _speed): Entity(), Alive(),AMovable(),IAttacker() {
 
-	vect.SetPositionX(_x);
-	vect.SetPositionY(_y);
-	maxHP = _hp;
-	actualHP = _hp;
-	direction.SetPositionX(_directionX);
-	direction.SetPositionY(_directionY);
-	speed = _speed;
+	position.Set_PositionX(_x);
+	position.Set_PositionY(_y);
+	Max_HP = _hp;
+	Cur_HP = _hp;
+	Direction.Set_PositionX(_directionX);
+	Direction.Set_PositionY(_directionY);
+	Speed = _speed;
 
-	std::cout << "Player just created at x = " << vect.GetPositionX()
-		<< " and y = " << vect.GetPositionY()
-		<< " with " << maxHP
-		<< " HP with a direction x = " << direction.GetPositionX()
-		<< " and y = " << direction.GetPositionY()
+	std::cout << "Player just created at x = " << position.Get_PosX()
+		<< " and y = " << position.Get_PosY()
+		<< " with " << Max_HP
+		<< " HP with a direction x = " << Direction.Get_PosX()
+		<< " and y = " << Direction.Get_PosY()
 		<< std::endl;
 }
 
-void Player::TakeDamage(float damage) {
-	actualHP -= damage;
+void Player::Lost_HP(float damage) {
+	Cur_HP -= damage;
 	std::cout << "Player just taked damage" << std::endl;
 }
 
 void Player::Move(Entity& target) {
 
-	float targetX = target.GetPositionX();
-	float targetY = target.GetPositionY();
+	float targetX = target.Get_PosX();
+	float targetY = target.Get_PosY();
 
-	SetDirection(targetX - vect.GetPositionX(), targetY - vect.GetPositionY());
+	set_direction(targetX - position.Get_PosX(), targetY - position.Get_PosY());
 
-	if (direction.GetPositionX() + direction.GetPositionY() == 0) {
-		std::cout << "Player don't have to move : x = " << vect.GetPositionX() << " and y = " << vect.GetPositionY() << std::endl;
+	if (Direction.Get_PosX() + Direction.Get_PosY() == 0) {
+		std::cout << "Player don't have to move : x = " << position.Get_PosX() << " and y = " << position.Get_PosY() << std::endl;
 		return;
 	}
 
-	float k = abs(speed / (direction.GetPositionX() + direction.GetPositionY()));
+	float k = abs(Speed / (Direction.Get_PosX() + Direction.Get_PosY()));
 
-	SetPositionX(vect.GetPositionX() + k * direction.GetPositionX());
-	SetPositionY(vect.GetPositionY() + k * direction.GetPositionY());
+	Set_PosX(position.Get_PosX() + k * Direction.Get_PosX());
+	Set_PosY(position.Get_PosY() + k * Direction.Get_PosY());
 
-	std::cout << "Player move to x = " << GetPositionX() << " and y = " << GetPositionY() << std::endl;
+	std::cout << "Player move to x = " << Get_PosX() << " and y = " << Get_PosY() << std::endl;
 }
 
-void Player::Attack(Alive* target,float damage) {
+void Player::Atk(Alive* target,float damage) {
 	std::cout << "Player just attacked" << std::endl;
-	target->TakeDamage(damage);
+	target->Lost_HP(damage);
 }

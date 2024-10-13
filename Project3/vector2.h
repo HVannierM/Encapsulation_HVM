@@ -6,10 +6,10 @@
 
 class Vector2{
 
-public:
 	float x;
 	float y;
 
+public:
 	Vector2();
 	void Set_PositionX(float);
 	void Set_PositionY(float);

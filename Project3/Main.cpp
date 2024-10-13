@@ -8,20 +8,27 @@
 #include "BreakableObject.h"
 #include "StaticObject.h"
 #include "Mob.h"
+#include "Player.h"
 #include <string>
 #include <vector>
 
 int main(int argc, const char* argv[]) {
-	StaticObject SO(10.f,0.f);
-	BreakableObject BO(0.f, 0.f, 20.f);
-	BO.Lost_HP(10.f);
-	Mob mob(2.f, 2.f, 50.f, 5.f, 0.f, 1.f);
-	player.Attack(mob, 10);
-	player.TakeDamage(10);
-	mob.Move(so); */
+
+	StaticObject so(5.3f, 6.3f);
+	Player player(0.f, 0.f, 50.f, 0.f, 0.f,1.f);
+	Mob mob(2.f, 2.f, 50.f, 5.f, 0.f,1.f);
+
+	player.Lost_HP(10);
+	mob.Move(so);
+	mob.Move(so);
+	mob.Move(so);
+	mob.Move(so);
+	mob.Move(so);
+	mob.Move(so);
+
 
 	return 0;
-	/* 	
+	/*
 	Integer N1(5);
 	Integer N2(10);
 	Integer TT = N2.operator/=(N1);

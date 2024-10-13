@@ -45,7 +45,7 @@
     <ClCompile Include="StaticObject.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\AppData\Local\Temp\Rar$DRa45016.2140\EncapsulationTheorique1-master\EncapsulationTheorique1\Player.cpp">
+    <ClCompile Include="Player.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,7 +83,7 @@
     <ClInclude Include="vector2.h">
       <Filter>Fichiers sources</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\AppData\Local\Temp\Rar$DRa45016.2140\EncapsulationTheorique1-master\EncapsulationTheorique1\Player.h">
+    <ClInclude Include="Player.h">
       <Filter>Fichiers sources</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,7 +5,7 @@
 
 class IAttacker{
 public:
-	virtual void Lost_HP_Atk(Alive* ,float)=0;
+	virtual void Atk(Alive* ,float)=0;
 };
 
 #endif
