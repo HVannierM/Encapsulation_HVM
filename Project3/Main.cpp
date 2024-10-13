@@ -29,7 +29,7 @@ int main(int argc, const char* argv[]) {
 	mob.Move(so);
 	mob.Move(so);
 	mob.Move(so);
-	mob.Move(so)
+	mob.Move(so);
 	mob.Move(so);
 	;*/
 

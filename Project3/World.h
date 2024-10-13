@@ -17,4 +17,4 @@ public:
 	float GetDistanceBetween(Entity*, Entity*);
 };
 
-#endif // !WORLD_H__
+#endif 

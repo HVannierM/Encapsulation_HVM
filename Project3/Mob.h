@@ -13,4 +13,4 @@ public:
 	void Move(Entity&) override;
 };
 
-#endif // !*MOB_H__
+#endif
