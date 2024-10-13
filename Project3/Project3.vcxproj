@@ -138,6 +138,8 @@
     <ClCompile Include="StaticObject.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="vector2.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="World.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alive.h" />
