@@ -14,16 +14,16 @@
 
 int main(int argc, const char* argv[]) {
 
+	//Exercice 10
+
 	StaticObject so(5.3f, 6.3f);
 	Player player(0.f, 0.f, 50.f, 0.f, 0.f,1.f);
-	Mob mob(2.f, 2.f, 50.f, 5.f, 0.f,1.f);
+	Mob mob(2.f, 2.f, 100.f, 5.f, 0.f,1.f);
 
+	player.Atk(&mob, 10);
+	std::cout << "Mob HP: " << mob.Get_Cur_HP() << std::endl;
 	player.Lost_HP(10);
-	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
-	mob.Move(so);
+	std::cout << "Player HP: " << player.Get_Cur_HP() << std::endl;
 	mob.Move(so);
 
 

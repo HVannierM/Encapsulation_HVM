@@ -44,7 +44,7 @@ void Player::Move(Entity& target) {
 	std::cout << "Player move to x = " << Get_PosX() << " and y = " << Get_PosY() << std::endl;
 }
 
-void Player::Atk(Alive* target,float damage) {
-	std::cout << "Player just attacked" << std::endl;
+void Player::Atk(Alive* target, float damage) {
 	target->Lost_HP(damage);
+	std::cout << "Player just attack" << std::endl;
 }
