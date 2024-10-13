@@ -56,6 +56,9 @@ void Integer::operator<<(const Integer& x) {
     this->Num << x.Num;
 }
 
-void Integer::pow(int expo ) {
-
+void Integer::pow(int _exposant) {
+    Integer nb(this->Num);
+    for (int i = 0; i < _exposant - 1; i++) {
+        this->operator*=(nb);
+    }
 }
