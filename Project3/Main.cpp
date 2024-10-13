@@ -25,8 +25,6 @@ int main(int argc, const char* argv[]) {
 	player.Lost_HP(10);
 	std::cout << "Player HP: " << player.Get_Cur_HP() << std::endl;
 	mob.Move(so);
-
-
 	return 0;
 	/*
 	Integer N1(5);
