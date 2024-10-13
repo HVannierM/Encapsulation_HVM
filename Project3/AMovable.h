@@ -1,15 +1,3 @@
-/*Faire la classe abstraite:
-Pour rappel:
-Une classe abstraite est une classe qui a au moins une fonction membre virtuel pur.
-AMovable
-Elle doit stocker un vecteur unitaire de direction dans un Vector2.
-Elle doit stocker un float pour la vitesse.
-Elle doit avoir un constructeur pour set la direction et la vitesse.
-Elle doit avoir une fonction membre public virtuel pour setter la direction.
-Elle doit avoir une fonction membre public virtuel pour setter la speed.
-Elle doit avoir une fonction membre public virtuel pur pour se déplacer.*/
-
-
 #include <iostream>
 #include "Vector2.h"
 #include "Entity.h"

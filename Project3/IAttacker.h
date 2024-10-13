@@ -3,7 +3,7 @@
 
 #include "Alive.h"
 
-class IAttacker{ //elle doit avoir la fonctions membres virtuel public pur pour attaquer un pointeur de Alive.
+class IAttacker{ 
 
 public:
 	virtual void Atk(Alive* ,float)=0;

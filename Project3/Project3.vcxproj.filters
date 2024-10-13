@@ -65,9 +65,6 @@
     <ClInclude Include="Entity.h">
       <Filter>Fichiers sources</Filter>
     </ClInclude>
-    <ClInclude Include="fulltest.h">
-      <Filter>Fichiers sources</Filter>
-    </ClInclude>
     <ClInclude Include="IAttacker.h">
       <Filter>Fichiers sources</Filter>
     </ClInclude>

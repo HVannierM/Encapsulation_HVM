@@ -30,6 +30,6 @@ public:
 	Player(float x, float y, float hp, float dir_X, float dir_Y, float speed);
 	void Lost_HP(float) override;
 	void Move(Entity&)	override;
-	void Atk(Alive*, float) override; //est ce que l'entrée pour le pointeur dans le main est correcte?
+	void Atk(Alive*, float) override;
 };
 #endif

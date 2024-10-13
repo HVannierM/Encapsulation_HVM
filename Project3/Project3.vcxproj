@@ -144,7 +144,6 @@
     <ClInclude Include="AMovable.h" />
     <ClInclude Include="BreakableObject.h" />
     <ClInclude Include="Entity.h" />
-    <ClInclude Include="fulltest.h" />
     <ClInclude Include="IAttacker.h" />
     <ClInclude Include="Integer.h" />
     <ClInclude Include="Mob.h" />
