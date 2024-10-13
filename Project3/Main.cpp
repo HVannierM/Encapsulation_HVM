@@ -9,11 +9,12 @@
 #include "StaticObject.h"
 #include "Mob.h"
 #include "Player.h"
+#include "World.h"
 #include <string>
 #include <vector>
 
 int main(int argc, const char* argv[]) {
-
+	/*
 	//Exercice 10
 
 	StaticObject so(5.f, 7.f);
@@ -28,13 +29,24 @@ int main(int argc, const char* argv[]) {
 	mob.Move(so);
 	mob.Move(so);
 	mob.Move(so);
+	mob.Move(so)
 	mob.Move(so);
-	mob.Move(so);
+	;*/
+
+	World TheWorld;
+
+	TheWorld.Init();
 
 
+
+
+	do {
+		TheWorld.Step();
+	} while (!TheWorld.CheckEnd());
 
 
 	return 0;
+}
 	/*
 	Integer N1(5);
 	Integer N2(10);
@@ -82,4 +94,3 @@ int main(int argc, const char* argv[]) {
 	
 	*/
 
-}
